@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "siapbantu-app",
-    "slug": "siapbantu-app",
+    "slug": "siapbantu",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -37,6 +37,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "ec07a710-64c2-4577-93b6-f3e0abdeac12"
+      }
+    },
+    "owner": "mhhablis-team"
   }
 }
