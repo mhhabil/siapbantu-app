@@ -6,9 +6,15 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "siapbantuapp",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SiapBantu memakai lokasimu untuk menghitung jarak ke penyedia jasa.",
+        "NSPhotoLibraryUsageDescription": "SiapBantu perlu akses galeri untuk mengunggah bukti transfer dan foto rumah.",
+        "NSCameraUsageDescription": "SiapBantu perlu akses kamera untuk memotret bukti transfer dan foto rumah."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -28,9 +34,22 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#1D6FE0",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SiapBantu memakai lokasimu untuk menghitung jarak ke penyedia jasa."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "SiapBantu perlu akses galeri untuk mengunggah bukti transfer dan foto rumah.",
+          "cameraPermission": "SiapBantu perlu akses kamera untuk memotret bukti transfer dan foto rumah."
         }
       ]
     ],
